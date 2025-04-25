@@ -8,7 +8,7 @@ body {
   }
   
   header {
-    background: linear-gradient(to right, #000000, #da0000);
+    background-color: #000000; /* Solid black */
     color: white;
     padding: 2rem;
     text-align: center;
@@ -27,8 +27,8 @@ body {
   }
   
   footer {
-    background: linear-gradient(to top, #000000, #da0000);
-    color: white;
+    background-color: #da0000; /* Solid red */
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 1.5rem 1rem;
     margin-top: 2rem;
@@ -45,7 +45,7 @@ body {
   }
   
   footer ul li a {
-    color: #ff0000;
+    color: #000000;
     text-decoration: none;
   }
   
