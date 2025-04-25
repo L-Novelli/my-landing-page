@@ -13,6 +13,14 @@ body {
     padding: 2rem;
     text-align: center;
   }
+
+  .red-text {
+    color: #da0000; /* Bright red */
+  }
+  
+  .grey-text {
+    color: #cccccc; /* Light grey */
+  }
   
   .contenido {
     padding: 2rem;
