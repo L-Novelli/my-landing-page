@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: linear-gradient(to bottom, #000000 0%, #000000 30%, #da0000 70%, #da0000 100%);
-    color: #333;
+    background: linear-gradient(to bottom, #000000 0%, #000000 15%, #da0000 70%, #da0000 100%);
+    color: #6e6e6e;
   }
   
   header {
