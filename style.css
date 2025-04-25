@@ -13,18 +13,13 @@ body {
     padding: 2rem;
     text-align: center;
   }
-
-  .red-text {
-    color: #da0000; /* Bright red */
-  }
-  
-  .grey-text {
-    color: #cccccc; /* Light grey */
-  }
   
   .contenido {
     padding: 2rem;
     text-align: center;
+  }
+  .grey-text {
+    color: #ff0000; /* Light grey */
   }
   
   .contenido img {
