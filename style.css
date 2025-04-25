@@ -3,13 +3,13 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #da0000;
+    background: linear-gradient(to bottom, #000000, #da0000);
     color: #333;
   }
   
   header {
-    background-color: #007acc;
-    color: rgb(0, 0, 0);
+    background: linear-gradient(to right, #000000, #da0000);
+    color: white;
     padding: 2rem;
     text-align: center;
   }
@@ -27,8 +27,8 @@ body {
   }
   
   footer {
-    background-color: #333;
-    color: rgb(0, 0, 0);
+    background: linear-gradient(to top, #000000, #da0000);
+    color: white;
     text-align: center;
     padding: 1.5rem 1rem;
     margin-top: 2rem;
@@ -45,7 +45,7 @@ body {
   }
   
   footer ul li a {
-    color: rgb(255, 0, 0);
+    color: #ff0000;
     text-decoration: none;
   }
   
