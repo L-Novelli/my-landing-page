@@ -22,7 +22,7 @@ body {
   }
   
   header img {
-    max-width: 200px;
+    max-width: 400px;
     width: 100%;
     height: auto;
   }
@@ -44,6 +44,27 @@ body {
     border-radius: 10px;
   }
   
+  .quienes-somos {
+    text-align: center;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .quienes-somos h2 {
+    font-size: 2rem;
+    color: #ff0000;
+    margin-bottom: 1rem;
+  }
+  
+  .quienes-somos p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #ff5151;
+  }
+  
+
   .boton-servicio {
     background-color: #ff0000;
     color: #ffffff;
