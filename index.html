@@ -16,20 +16,69 @@
 
   <section class="contenido">
     <h2><span class="offer">¿Qué ofrecemos?</span></h2>
-    <p>Servicios de reparación de PC.</p>
-    <p>Consultoría de Hardware.</p>
-    <p>Consultoría IT.</p>
-    <p>Armado de PC.</p>
-    <p>Asesorías para armados.</p>
+  
+    <div class="servicios-grid">
+      <div>
+        <p class="boton-servicio" data-desc="Reparamos computadoras de escritorio y notebooks.">Reparación de PC.</p>
+        <div class="descripcion"></div>
+      </div>
+      <div>
+        <p class="boton-servicio" data-desc="Te ayudamos a elegir o diagnosticar tus componentes.">Consultoría de Hardware.</p>
+        <div class="descripcion"></div>
+      </div>
+      <div>
+        <p class="boton-servicio" data-desc="Asesoramiento y soluciones para sistemas de IT.">Consultoría IT.</p>
+        <div class="descripcion"></div>
+      </div>
+      <div>
+        <p class="boton-servicio" data-desc="Armamos tu PC a medida según tus necesidades.">Armado de PC.</p>
+        <div class="descripcion"></div>
+      </div>
+      <div>
+        <p class="boton-servicio" data-desc="Te guiamos para elegir los mejores componentes.">Asesorías para armados.</p>
+        <div class="descripcion"></div>
+      </div>
+      <div>
+        <p class="boton-servicio" data-desc="Otros servicios personalizados.">Servicio adicional.</p>
+        <div class="descripcion"></div>
+      </div>
+    </div>
+  
     <img src="images/tu-imagen.jpg" alt="Descripción de la imagen" />
   </section>
+  
 
   <footer>
     <p>Conectemos:</p>
     <ul>
-      <li><a href="https://github.com/l-novelli" target="_blank">GitHub</a></li>
       <li><a href="https://www.linkedin.com/in/l-novelli/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/l-novelli" target="_blank">GitHub</a></li>
     </ul>
   </footer>
+
+  <script>
+    const botones = document.querySelectorAll('.boton-servicio');
+    const descripciones = document.querySelectorAll('.descripcion');
+  
+    botones.forEach((boton, index) => {
+      boton.addEventListener('click', () => {
+        descripciones.forEach((desc, i) => {
+          if (i === index) {
+            if (desc.classList.contains('visible')) {
+              desc.classList.remove('visible');
+            } else {
+              desc.textContent = boton.getAttribute('data-desc');
+              desc.classList.add('visible');
+            }
+          } else {
+            desc.classList.remove('visible');
+          }
+        });
+      });
+    });
+  </script>
+  
+  
+  
 </body>
 </html>
