@@ -11,11 +11,11 @@
     <h1>
       <img src="images/logo.png" alt="REDCORE SYSTEMS" />
     </h1>
-    <p>IT Services</p>
+    <p>Consultoria IT</p>
   </header>
 
   <section class="contenido">
-    <h2><span class="offer">What do we offer?</span></h2>
+    <h2><span class="offer">Que servicios ofrecemos?</span></h2>
   
     <div class="servicios-grid">
       <div>
@@ -43,11 +43,22 @@
         <div class="descripcion"></div>
       </div>
     </div>
-    <img src="images/tu-imagen.jpg" alt="Image description" />
+
+    <h2 class="clientes-titulo">Clientes</h2>
+
+    <div class="carrusel">
+      <div class="carrusel-imagenes">
+        <img src="images/gyansys.png" alt="Cliente 1" class="cliente-img" />
+        <img src="images/novelli.png" alt="Cliente 2" class="cliente-img" />
+        <img src="images/sth.jpg" alt="Cliente 3" class="cliente-img" />
+        <!-- Agregá más imágenes si querés -->
+      </div>
+    </div>
+
   </section>
   
   <footer>
-    <p>Let's connect:</p>
+    <p>Contactanos:</p>
     <ul>
       <li><a href="https://www.linkedin.com/in/l-novelli/" target="_blank">LinkedIn</a></li>
       <li><a href="https://github.com/l-novelli" target="_blank">GitHub</a></li>
@@ -57,7 +68,44 @@
   <script>
     const botones = document.querySelectorAll('.boton-servicio');
     const descripciones = document.querySelectorAll('.descripcion');
-  
+    
+  const carruselImagenes = document.querySelector('.carrusel-imagenes');
+  const imagenes = document.querySelectorAll('.cliente-img');
+
+  // Duplicamos las imágenes
+  imagenes.forEach(img => {
+    const clone = img.cloneNode(true);
+    carruselImagenes.appendChild(clone);
+  });
+
+  let desplazamiento = 0;
+  const velocidad = 1; // Ajusta la velocidad aquí
+
+  function moverCarrusel() {
+    desplazamiento += velocidad;
+    carruselImagenes.style.transform = `translateX(-${desplazamiento}px)`;
+
+    const anchoTotal = carruselImagenes.scrollWidth / 2;
+
+    if (desplazamiento >= anchoTotal) {
+      // 🔴 Antes de resetear, desactivo la transición
+      carruselImagenes.style.transition = 'none';
+      desplazamiento = 0;
+      carruselImagenes.style.transform = `translateX(0)`;
+
+      // 🟢 Después de un pequeño delay, reactivo la transición
+      requestAnimationFrame(() => {
+        carruselImagenes.style.transition = 'transform 0.5s linear';
+      });
+    }
+
+    requestAnimationFrame(moverCarrusel);
+  }
+
+  // Iniciar movimiento
+  carruselImagenes.style.transition = 'transform 0.5s linear';
+  moverCarrusel();
+
     botones.forEach((boton, index) => {
       boton.addEventListener('click', () => {
         descripciones.forEach((desc, i) => {

@@ -87,6 +87,37 @@ body {
   }
   
   
+.clientes-titulo {
+  margin-top: 3rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.carrusel {
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+  margin: 2rem auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  position: relative;
+}
+
+.carrusel-imagenes {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.cliente-img {
+  max-height: 200px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+
+
 
   footer {
     background-color: #ff0000;
