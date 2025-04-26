@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REDCORE SYSTEMS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>
+      <img src="images/logo.png" alt="REDCORE SYSTEMS" />
+    </h1>
+    <p>IT Services</p>
+  </header>
+
+  <section class="contenido">
+    <h2><span class="offer">What do we offer?</span></h2>
+  
+    <div class="servicios-grid">
+      <div>
+        <p class="boton-servicio" data-desc="We repair desktop computers and laptops.">PC Repair</p>
+        <div class="descripcion"></div>
+      </div>
+      <div>
+        <p class="boton-servicio" data-desc="We help you choose or diagnose your hardware components.">Hardware Consulting</p>
+        <div class="descripcion"></div>
+      </div>
+      <div>
+        <p class="boton-servicio" data-desc="Advice and solutions for IT systems.">IT Consulting</p>
+        <div class="descripcion"></div>
+      </div>
+      <div>
+        <p class="boton-servicio" data-desc="We build custom PCs tailored to your needs.">PC Building</p>
+        <div class="descripcion"></div>
+      </div>
+      <div>
+        <p class="boton-servicio" data-desc="We guide you to choose the best components.">Build Guidance</p>
+        <div class="descripcion"></div>
+      </div>
+      <div>
+        <p class="boton-servicio" data-desc="Other personalized services.">Additional Service</p>
+        <div class="descripcion"></div>
+      </div>
+    </div>
+  
+    <img src="images/tu-imagen.jpg" alt="Image description" />
+  </section>
+  
+  <footer>
+    <p>Let's connect:</p>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/l-novelli/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/l-novelli" target="_blank">GitHub</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    const botones = document.querySelectorAll('.boton-servicio');
+    const descripciones = document.querySelectorAll('.descripcion');
+  
+    botones.forEach((boton, index) => {
+      boton.addEventListener('click', () => {
+        descripciones.forEach((desc, i) => {
+          if (i === index) {
+            if (desc.classList.contains('visible')) {
+              desc.classList.remove('visible');
+            } else {
+              desc.textContent = boton.getAttribute('data-desc');
+              desc.classList.add('visible');
+            }
+          } else {
+            desc.classList.remove('visible');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
