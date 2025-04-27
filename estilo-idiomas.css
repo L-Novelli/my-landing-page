@@ -1,7 +1,7 @@
 body {
     background: linear-gradient(to bottom, #000000 0%, #000000 30%, #000000 40%,#000000 80% ,#ff0000 90%,#ff0000 100%);
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Consolas', 'Lucida Console', 'Courier New', 'Courier', monospace;
     margin: 0;
     padding: 0;
     height: 100vh;
