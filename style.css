@@ -45,20 +45,20 @@ body {
     border-radius: 10px;
   }
   
-  .about-us {
+  .quienes-somos {
     text-align: center;
     padding: 2rem;
     max-width: 900px;
     margin: 0 auto;
   }
   
-  .about-us h2 {
+  .quienes-somos h2 {
     font-size: 2rem;
     color: #ff0000;
     margin-bottom: 1rem;
   }
   
-  .about-us p {
+  .quienes-somos p {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
