@@ -1,6 +1,6 @@
 /* Base Styles */
 body {
-    font-family: 'OCR A', Bold;
+    font-family: 'Consolas', 'Lucida Console', 'Courier New', 'Courier', monospace;
     margin: 0;
     padding: 0;
     line-height: 1.6;
