@@ -11,7 +11,6 @@
     <h1>
       <img src="images/logo.png" alt="REDCORE SYSTEMS" />
     </h1>
-    <p>Consultoria IT</p>
   </header>
 
   <section class="quienes-somos">
@@ -29,8 +28,10 @@
       Además, brindamos <strong>mantenimiento de infraestructura tecnológica</strong>, con especial foco en <strong>hardware crítico</strong>.
     </p>
     <p>
-      Empresas globales confían en nosotros para su <strong>soporte y consultoría IT</strong>.
+      Tanto empresas globales como locales confían en nosotros para su <strong>soporte y consultoría IT</strong>.
     </p>
+    <p>
+      También ofrecemos <strong>servicios de impresión 3D</strong> y <strong>modelados digitales a pedido</strong>, ideales para prototipado, piezas funcionales o personalización de productos.    </p>
     <p><strong>REDCORE SYSTEMS: tecnología segura, infraestructura sólida, resultados reales.</strong></p>
   </div>
 </section>
@@ -39,31 +40,45 @@
     <h2><span class="offer">Que servicios ofrecemos?</span></h2>
   
     <div class="servicios-grid">
-      <div>
-        <p class="boton-servicio" data-desc="Reparamos computadoras de escritorio y notebooks.">Reparación de PC.</p>
-        <div class="descripcion"></div>
+      <div class="fila-servicios">
+        <div class="servicio">
+          <button class="boton-servicio" onclick="toggleDescripcion(this)" data-desc="Reparamos computadoras de escritorio y notebooks.">Reparación de PC</button>
+          <div class="descripcion"></div>
+        </div>
+        <div class="servicio">
+          <button class="boton-servicio" onclick="toggleDescripcion(this)" data-desc="Te ayudamos a elegir o diagnosticar tus componentes.">Consultoría de Hardware</button>
+          <div class="descripcion"></div>
+        </div>
+        <div class="servicio">
+          <button class="boton-servicio" onclick="toggleDescripcion(this)" data-desc="Asesoramiento y soluciones para sistemas de IT.">Consultoría IT</button>
+          <div class="descripcion"></div>
+        </div>
       </div>
-      <div>
-        <p class="boton-servicio" data-desc="Te ayudamos a elegir o diagnosticar tus componentes.">Consultoría de Hardware.</p>
-        <div class="descripcion"></div>
+    
+      <div class="fila-servicios">
+        <div class="servicio">
+          <button class="boton-servicio" onclick="toggleDescripcion(this)" data-desc="Armamos tu PC a medida según tus necesidades.">Armado de PC</button>
+          <div class="descripcion"></div>
+        </div>
+        <div class="servicio">
+          <button class="boton-servicio" onclick="toggleDescripcion(this)" data-desc="Te guiamos para elegir los mejores componentes.">Asesorías para armados</button>
+          <div class="descripcion"></div>
+        </div>
+        <div class="servicio">
+          <button class="boton-servicio" onclick="toggleDescripcion(this)" data-desc="Otros servicios personalizados.">Servicio adicional</button>
+          <div class="descripcion"></div>
+        </div>
       </div>
-      <div>
-        <p class="boton-servicio" data-desc="Asesoramiento y soluciones para sistemas de IT.">Consultoría IT.</p>
-        <div class="descripcion"></div>
-      </div>
-      <div>
-        <p class="boton-servicio" data-desc="Armamos tu PC a medida según tus necesidades.">Armado de PC.</p>
-        <div class="descripcion"></div>
-      </div>
-      <div>
-        <p class="boton-servicio" data-desc="Te guiamos para elegir los mejores componentes.">Asesorías para armados.</p>
-        <div class="descripcion"></div>
-      </div>
-      <div>
-        <p class="boton-servicio" data-desc="Otros servicios personalizados.">Servicio adicional.</p>
-        <div class="descripcion"></div>
+    
+      <div class="fila-servicios fila-central">
+        <div class="servicio">
+          <button class="boton-servicio" onclick="toggleDescripcion(this)" data-desc="Contamos con servicio de modelado e impresión 3D, tanto para prototipado, impresiones customizadas, modelos personalizados y mucho más.">PROXIMAMENTE: Impresiones 3D</button>
+          <div class="descripcion"></div>
+        </div>
       </div>
     </div>
+    
+    
     <h2 class="clientes-titulo">Clientes</h2>
 
     <div class="carrusel">
