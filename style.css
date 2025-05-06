@@ -119,9 +119,10 @@ body {
   }
   
   .descripcion.visible {
-    max-height: 150px;
+    max-height: none;
     padding: 1rem;
   }
+  
   
   
   
